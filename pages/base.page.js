@@ -2,7 +2,7 @@
 class BasePage {
 
     constructor(driver){
-        
+
         this.driver = driver;
         
         if (new.target === BasePage) {

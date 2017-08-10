@@ -24,13 +24,13 @@ class LoginPage extends BasePage {
     loginAsWrongUser(username, password){
 
         this.driver.findElement(emailInput).sendKeys(username)
-            .then(() => console.log(username + " Entered to username fileld"));
+            .then(() => console.log(`\"${username}\" Entered to username fileld`));
         this.driver.findElement(passwordInput).sendKeys(password)
-            .then(() => console.log(password + " Entered to password fileld"));
+            .then(() => console.log(`\"${password}\" Entered to password fileld`));
         this.driver.findElement(signInBtn).click()
             .then(() => console.log("Sign In button clicked"));
         return this.driver.findElement(errorMsg).getText();
-        
+
     }
 
     isPageAvailable(){
