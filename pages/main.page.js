@@ -1,15 +1,16 @@
 import { By } from "selenium-webdriver";
-import { BasePage } from "./base.page.js";
-import { LoginPage } from "./login.page.js";
+import BasePage from "./base.page";
+import LoginPage from "./login.page";
 
 //Locators
 const signInBtn = By.xpath("//a[@href='/login']");
 
-class MainPage extends BasePage {
+export default class MainPage extends BasePage {
 
     constructor(driver){
-        super(driver)
-                
+
+        super(driver)                
+
     }
 
     open(){
@@ -36,4 +37,4 @@ class MainPage extends BasePage {
 
 }
 
-export { MainPage };
+//export { MainPage };

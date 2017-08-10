@@ -1,5 +1,5 @@
 
-class BasePage {
+export default class BasePage {
 
     constructor(driver){
 
@@ -17,4 +17,4 @@ class BasePage {
 
 }
 
-export { BasePage };
+//export { BasePage };
